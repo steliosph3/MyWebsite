@@ -115,11 +115,12 @@ nav .fa{
     padding: 30px;
 }
 }
-.CARP{
+.CARP {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    border: 1px solid blue;
 }
 h1{
     font-size: 36px;
@@ -132,3 +133,25 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+
+.row {
+    display: flex;
+    border: 1px dashed pink;
+  }
+  
+  .column {
+    display: flex;
+    /* flex: 50%; */
+    flex-wrap: wrap;
+    padding: 100px;
+    height: 400px;
+    border: 1px solid chartreuse;
+  }
+
+.media-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 15px 25px 15px 15px;
+    overflow: hidden;
+ }
