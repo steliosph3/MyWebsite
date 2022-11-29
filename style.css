@@ -142,7 +142,6 @@ p{
   .column {
     display: flex;
     /* flex: 50%; */
-    flex-wrap: wrap;
     padding: 100px;
     height: 400px;
     border: 1px solid chartreuse;
@@ -154,4 +153,10 @@ p{
     flex-wrap: wrap;
     padding: 15px 25px 15px 15px;
     overflow: hidden;
+ }
+
+/*  */
+ .section-five {
+    background-color: goldenrod;
+    height: 1400px;
  }
