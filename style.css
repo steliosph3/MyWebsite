@@ -3,6 +3,20 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+.grid-main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10% auto 2% auto 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    '. carp-p1 . carp-img1 .'
+    '. carp-img2 . carp-p2 .'
+    '. carp-p3 . carp-img3 .'
+    '. carp-img4 . carp-p4 .'
+}
+
+/* HEADER INTRO*/
 .header {
     min-height: 100vh;
     width: 100;
@@ -20,6 +34,8 @@ nav{
 nav img{
     width: 110px;
 }
+
+/* MENU */
 .nav-links{
     flex: 1;
     text-align: right;
@@ -48,6 +64,8 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+/* INTRO TEXT */
 .text-box{
     width: 90%;
     color: #fff;
@@ -65,6 +83,8 @@ nav img{
     font-size: 20px;
     color: #fff;
 }
+
+/* BUTTON INTRO */
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -82,10 +102,12 @@ nav img{
     transition: 0.5s;
 }
 
+
 nav .fa{
     display: none;
 }
 
+/* MOBILE COMPATIBILITY */
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -116,47 +138,126 @@ nav .fa{
 }
 }
 .CARP {
-    width: 80%;
+    background-color:#FFE184;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-    border: 1px solid blue;
+    padding-top: 3%;
 }
 h1{
     font-size: 36px;
     font-weight: 600;
+    
 }
 p{
-    color: #777;
+    color: grey;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
 
-.row {
-    display: flex;
-    border: 1px dashed pink;
-  }
-  
-  .column {
-    display: flex;
-    /* flex: 50%; */
-    padding: 100px;
-    height: 400px;
-    border: 1px solid chartreuse;
-  }
 
-.media-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 15px 25px 15px 15px;
-    overflow: hidden;
+
+/* CARP SECTION */
+
+.carp-title {
+    color: #0a0b1e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 3%;
+}
+
+
+.carp1{
+    font-size: 50px;
+}
+
+/* Paragraphs Styles */
+.carp-p{
+    background-color: white;
+    color: #FFE184;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carp-pa {
+    background-color: white;
+    color: #FFE184;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carp-img{
+    margin: 2%;
+}
+
+.carp-img img{
+    background-color: white;
+    vertical-align: middle;
+    width: 75%;
+    padding-top: 0%;
+    
+}
+
+#carp-p1{
+    grid-area: carp-p1;
+
+}
+
+#carp-img1{
+    grid-area: carp-img1;
+}
+
+#carp-p2{
+    grid-area: carp-p2;
+}
+
+#carp-img2{
+    grid-area: carp-img2;
+    padding-left: 10%;
+    width: 100%;
+}
+
+#carp-p3{
+    grid-area: carp-p3;
+}
+
+#carp-img3{
+    grid-area: carp-img3;
+}
+
+#carp-p4{
+    grid-area: carp-p4;
+}
+
+#carp-img4{
+    grid-area: carp-img4;
+}
+
+.img {
+    margin-top: 15%;
+    box-shadow: 0px 0px 20px;
+
  }
 
-/*  */
- .section-five {
-    background-color: goldenrod;
-    height: 1400px;
+ .img1 {
+    margin-top: 15%;
+    box-shadow: 0px 0px 20px;
+
  }
+ 
+ 
+
+
+
+
+
+
