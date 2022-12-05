@@ -44,9 +44,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: -5px;
     width: 90%;
-    opacity: 100%;
+    opacity: 90%;
 }
 nav img{
     width: 110px;
