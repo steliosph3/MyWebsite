@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyWebsite</title>
+    <title>BSc Digital Media</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas">
    
 </head>
 
 <body>
-    <section class="header">
+    <a id="start"></a>
+    <header>
         <nav>
-            <a href='mywebsite.html'><img src='images/trans.png'></a>
+            <a href='mywebsite.html'><img src='images/logo.png'></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">INTRO</a></li>
-                    <li><a href="">CARP</a></li>
-                    <li><a href="">TYPOGRAPHY</a></li>
+                    <li><a href="#start">INTRO</a></li>
+                    <li><a href="#carp-p1">CARP</a></li>
+                    <li><a href="#typo-card">TYPOGRAPHY</a></li>
                     <li><a href="">UX</a></li>
                     <li><a href="">OTHER WORK</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -38,16 +40,16 @@
             <p>This is my 'Design Fundamentals Website Project', the first assignment for the<br>
                 'Graphic & Web Design Studio' module, where I am showcasing my skills in graphic design <br>
                 and coding throughout various task sheets that I have completed.</p>
-            <a href="" class="hero-btn">Explore</a>
+            <button class="hero-btn"><a style="text-decoration: none; color:white"href="#carp-p1">Explore</a></button>
         </div>
-    </section>
-
+         
+    </header>
 
 
    
     <!--CARP section-->
 
-    <section class="CARP">
+    <section class="CARP" id="carp-p1">
         <h1 class="carp-title">Contrast, Alignment, Repetition, Proximity Task (CARP) </h1>
     </section>
 
@@ -56,51 +58,137 @@
     <!--First Design-->
         <section class="carp-p" id="carp-p1">
             <h1>Bristol Balloon Festival 2023 - First Design</h1>
-            <p>My first design was centred on the logo with a central divider following the diagonal within the logo. One side of the logo was a collage of images pulled from the True/False website and the other was red white-space matching the logo. <br><br>
-            I chose the three colours used on the logo to use as my colour scheme for all four designs to create visual consistency within each poster. In addition, I chose the font ‘Impact’ as it had a very bold and easy to read style – perfect for a poster to make text stand out better. <br><br>
-            For the text, the white on red has a much stronger contrast than black on red making it more visually interesting and easier to read – where there is text on the collage, I added black text with a white stroke as I found this has the best contrast. <br><br>
-            I tried to align the text with the central divider – some of it laying diagonally on the line and with the text on the white-space its margin is aligned diagonally with the line. <br><br>
-            While this design is relatively weak on repetition and proximity, the collage of images provides a repetitive theme and a neat proximity along with the repeated colour palette.
+            <p class="carp-paragraph">For my first design i used a background image where theres numerous hot airballoons displayed which depicts a repetition effect. In the centre of the poster i added the main title text "Bristol international fiesta" where i replaced the letter "o" from the word 'Bristol' with a vector hot air balloon.<br><br>
+            Then under the main title i added all the other details that where needed for the event with first the text highlighting that it is 'Europes largest ballooning event' with underlining 'largest' to get that message across to the viewer. <br><br>
+            The colours i chose where where a light yellow and white, with manipulating the opacity to create an effect where the text would blend with the background in some cases.<br><br>
+            I seperated the content into 3 sections where the first section, at the very top, that displayed clearly the event date. The second section wsa the main title and other necessary information, and for the final section at the bottom of the poster i displayed all the sponsors of the event.   <br><br>
+            
             </p>
         </section>
         <section class="carp-img" id="carp-img1">
-            <img class="img" src="images/carp.png" alt="">
-            
-         </section>
+            <img class="img" src="images/carp3.png" alt="">
+        </section>
 
     <!--Second Design-->
         <section class="carp-img" id="carp-img2">
-           <img class="img1" src="images/carp2.png" alt="">
+           <img class="img2" src="images/carp2.png" alt="">
          </section>
          <section class="carp-pa" id="carp-p2">
             <h1>Bristol Balloon Festival 2023 - Second Design</h1>
-            <p>For my second design I kept most elements from the first, but I used a horizontal style making better use of white-space and to provide better readability. I once again used a collage of images but this time the entire background is part of it with the text sitting on shaded black boxes to be become more readable.</p>
+            <p>For my second design I kept most elements from the first, but instead i used the events original logo as my centre text as i dived into research on their website where they used the same layout which would create a smooth link between website and poster. <br> 
+            <br>I then replaced the top section instead of the date, with the text "Europes largest ballooning event" with some nice font. </p>
         </section>
 
     <!--Third Section-->
-        <section class="carp-p" id="carp-p3">
-            <h1>Bristol Balloon Festival 2023 - Second Design</h1>            <p>My personal favourite of the three initial designs was the third where I began where experimenting with the typographic systems below - I took a semi modular approach to the text with red dividers between the different sections adding more overall flow to the poster.
+        <section class="carp-par" id="carp-p3">
+            <h1>Bristol Balloon Festival 2023 - Final Design</h1> 
+                <p>For my final and favourite design of the three is where i changed the background image with a beautiful huge hot air balloon in the centred and with multiple fireworks going on. This was a perfect choice for displaying repetition and proximity. <br>
+                <br>I chose to keep all the changes from my second design's layout with the logo centred and with the sponsors on the bottom as it creates a balanced all around visual to the viewer.
             <br><br>
-            I also divided the poster horizontally into the rule of thirds with the logo centred in the top third with one bright image as the background to bring more light and clarity to the top section. In the lower two thirds I used the shade of black featured in the logo as the background with white and red text bringing a lot of striking contrast to the piece.
+            I felt that this design was the most appealing at a first glance and at the same time getting the message acroos and all the information that was needed for the viewer.
             </p>
         </section>
         <section class="carp-img" id="carp-img3">
-            <img src="images/" alt="">
+            <img class="img3" src="images/final carp.png" alt="">
         </section>
 
-    </main>
+        <!--TYPOGRAPHY Section-->
+
+        <section class="TYPOGRAPHY" id="typo-card">
+            <h1 class="tp-title">TYPOGRAPHY TASK</h1>
+        </section>
+
+        <!--AXIAL SYSTEM-->
+        <section class="tp-info" id="typo-info1">
+            <p class="tp-desc-title">Axial System</p>
+            <p>With an axial system, all elements are aligned to either the <br>right  or left side of a central axis.</p>
+        </section>
+        <section class="tp-img" id="tp-img1">
+            <img src="images/Axial system-01.png" alt="">
+         </section>
+
+         <!--BILATERAL SYSTEM-->
+         <section class="tp-img" id="tp-img2">
+            <img src="images/Bilateral system-01.png" alt="">
+        </section>
+        <section class="tp-info" id="typo-info2">
+            <p class="tp-desc-title">Bilateral System</p>
+            <p>Related to an axial system, a bilateral system instead has all elements <br> placed symmetrically centred on the axis.</p>
+        </section>
+
+        <!--DILATIONAL SYSTEM-->
+        <section class="tp-info" id="typo-info3">
+            <p class="tp-desc-title">Dilational System</p>
+            <p>In a dilatational system, elements expand outwards from the central point <br> in a circular fashion.</p>
+        </section>
+        <section class="tp-img" id="tp-img3">
+            <img src="images/Dilatational System-01.png" alt="">
+        </section>
+
+        <!--GRID SYSTEM-->
+        <section class="tp-img" id="tp-img4">
+           <img src="images/Grid system-01.png" alt="">
+        </section>
+        <section class="tp-info" id="typo-info4">
+            <p class="tp-desc-title">Grid System</p>
+            <p>In a grid system, the space is divided evenly into sections with each element displaced throughout them.</p>
+        </section>
+
+        <!--MODULAR SYSTEM-->
+        <section class="tp-img" id="tp-img5">
+           <img src="images/Modular system-01.png" alt="">
+        </section>
+        <section class="tp-info" id="typo-info5">
+            <p class="tp-desc-title">Modular System</p>
+            <p>The modular system is similar to the grid system except the sections follow no specific pattern.</p>
+        </section>
+
+        <!--RADIAL SYSTEM-->
+        <section class="tp-info" id="typo-info6">
+            <p class="tp-desc-title">Radial System</p>
+            <p>In a radial system, the elements extend from a central point of focus.</p>
+        </section>
+        <section class="tp-img" id="tp-img6">
+            <img src="images/Radial system-01.png" alt="">
+        </section>
+
+        <!--RANDOM SYTEM-->
+        <section class="tp-info" id="typo-info7">
+            <p class="tp-desc-title">Random System</p>
+            <p>Elements in a random system appear to have no specific pattern.</p>
+        </section>
+        <section class="tp-img" id="tp-img7">
+            <img src="images/Random system-01.png" alt="">
+         </section>
+
+         <!--TRANSITIONAL SYSTEM-->
+         <section class="tp-info" id="typo-info8">
+            <p class="tp-desc-title">Transitional System</p>
+            <p>A transitional system features elements layered in an informal manner.</p>
+        </section>
+        <section class="tp-img" id="tp-img8">
+           <img src="images/Transitional system-01.png" alt="">
+       </section>
+
+       
+
+
+
+
 
 
         
-                
 
-                    
+
         
-            
+
+
+        
+      
+
     
-
-    </section>
-
+ 
+</main>
 
 
 
