@@ -46,7 +46,7 @@ nav{
     position: fixed;
     top: 0;
     width: 90%;
-    opacity: 70%;
+    opacity: 75%;
 }
 nav img{
     width: 110px;
@@ -68,6 +68,7 @@ nav img{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+
 }
 .nav-links ul li::after{
     content:'';
@@ -125,6 +126,15 @@ nav .fa{
 
 /* MOBILE COMPATIBILITY */
 @media(max-width: 700px){
+
+    .grid-main{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+
+    }
     .text-box h1{
         font-size: 20px;
     }
@@ -159,6 +169,8 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 3%;
+    margin-top: 50px;
+    transform: translate(0,-60px);
 }
 
 .TYPOGRAPHY {
@@ -167,6 +179,8 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 3%;
+    margin-top: 50px;
+    transform: translate(0,-60px);
 }
 
 h1{
@@ -248,8 +262,9 @@ p{
 }
 
 .carp-img{
-    margin: 2%;
-    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
    
 }
@@ -267,6 +282,8 @@ p{
 
 #carp-img1{
     grid-area: carp-img1;
+    padding-left: 10%;
+    width: 100%;
 }
 
 #carp-p2{
@@ -285,6 +302,8 @@ p{
 
 #carp-img3{
     grid-area: carp-img3;
+    padding-left: 10%;
+    width: 100%;
 }
 
 #carp-p4{
@@ -329,7 +348,7 @@ p{
 
 
 
-.tp-desc-title{
+.typo-title{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -339,6 +358,7 @@ p{
     color:#B06461;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    line-height: normal;
 }
 
 
