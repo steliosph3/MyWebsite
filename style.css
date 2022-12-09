@@ -4,6 +4,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* A past student's project had made me research further into grid templates for using as a main structure of my website - https://ollie-perry.github.io/Portfolio-Website/#top */
 .grid-main{
     background-color: white;
     display: grid;
@@ -22,7 +28,10 @@
     '. typo-info5 . tp-img5 .'
     '. tp-img6 . typo-info6 .'
     '. typo-info7 . tp-img7 .'
-    '. tp-img8 . typo-info8 .';
+    '. tp-img8 . typo-info8 .'
+    'css-card css-card css-card css-card css-card'
+    '. html-info1 . html-img1 .'
+    '. html-img2 . html-info2 .';
 }
 
 
@@ -109,7 +118,7 @@ nav img{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 15px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -118,6 +127,7 @@ nav img{
     border: 1px solid #FFE184;
     background: #FFE184;
     transition: 0.5s;
+    
 }
 
 nav .fa{
@@ -127,7 +137,18 @@ nav .fa{
 /* MOBILE COMPATIBILITY */
 @media(max-width: 700px){
 
-  
+    .nav-links ul li::after{
+        content:'';
+        width: 0%;
+        height: 2px;
+        background: #0a0b1e;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
 
 
     .tp-img{
@@ -218,14 +239,14 @@ nav .fa{
 }
 
 h1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     
 }
 p{
     
     color: #0a0b1ece;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 22px;
     padding: 20px;
@@ -289,7 +310,7 @@ p{
     background-color: white;
     color: #FFE184;
     font-family: 'Poppins', sans-serif;
-    padding-top: 10%;
+    padding-top: 20%;
     padding-bottom: 10%;
     padding-left: 10%;
     padding-right: 10%;
@@ -304,7 +325,6 @@ p{
 }
 
 .carp-img img{
-    background-color: white;
     vertical-align: middle;
     width: 85%;
 }
@@ -482,6 +502,156 @@ p{
     grid-area: tp-img8;
 }
 
+/* HTML/CSS section */
+
+
+.HTML {
+    background-color: #0a0b1ef2;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20%;
+    margin-top: 100px;
+    transform: translate(0,-60px);
+}
+
+.css-title{
+    color: #FFE184;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    
+}
+
+
+#css-card{
+    
+    color: #ebebeb;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7vw;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    grid-area: css-card;
+}
+
+.html-info{
+    background-color: #0a0b1e;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10%;
+    padding-bottom: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 0px 0px 50px;
+    border-radius: 7px;
+    box-sizing: content-box;
+    padding-bottom: 10%;
+    margin-bottom: 15%;
+    
+}
+
+/* Html/css Buttons */
+.html-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    border-radius: 40px 40px;
+    
+    
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.html-btn:hover{
+    border: 1px solid #FFE184;
+    background: #FFE184;
+    transition: 0.5s;
+    
+}
+
+
+/* HTML images */
+
+.html-img{
+    margin: 5%;
+    width: 100%;
+}
+
+.html-img img{
+    vertical-align: middle;
+    width: 110%;
+    padding-top: 10%;
+    
+    
+}
+
+.html-title{
+    color: #FFE184;
+    font-size: 45px;
+    padding: 1%;
+    line-height: normal;
+    
+}
+
+
+.info {
+    color: white;
+    padding-bottom: 50px;
+}
+
+#html-info1{
+    grid-area: html-info1;
+}
+
+#html-img1{
+    grid-area: html-img1;
+}
+
+#html-info2{
+    grid-area: html-info2;
+}
+
+#html-img2{
+    grid-area: html-img2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -513,7 +683,7 @@ p{
 
 .container{
 	max-width: 1170px;
-	margin:auto;
+	margin:auto
 }
 .row{
 	display: flex;
@@ -525,6 +695,7 @@ ul{
 .footer{
 	background-color: #0a0b1ef3;
     padding: 70px 0;
+    margin-top: 5%;
 }
 .footer-col{
    width: 25%;
