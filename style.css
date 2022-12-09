@@ -239,7 +239,7 @@ nav .fa{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     
 }
@@ -586,10 +586,15 @@ p{
 
 .html-img img{
     vertical-align: middle;
-    width: 110%;
+    width: 130%;
     padding-top: 10%;
     
     
+}
+
+.PC {
+    width: 120%;
+    padding-top: 30%;
 }
 
 .html-title{
