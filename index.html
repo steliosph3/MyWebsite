@@ -32,6 +32,8 @@
                     <li><a href="#carp-p1">CARP</a></li>
                     <li><a href="#typo-card">TYPOGRAPHY</a></li>
                     <li><a href="#css-card">HTML/CSS</a></li>
+                    <li><a href="#ux-task">UX</a></li>
+                    <li><a href="#ref-task">REFLECTION</a></li>
                     <li><a href="#footer">ABOUT</a></li>
                 </ul>
             </div>
@@ -180,6 +182,7 @@
 
 
 <!--HTML/CSS SECTION-->
+
  <section class="HTML" id="css-card">
                 <p class="css-title">HTML/CSS TASK</p>
             </section>
@@ -206,14 +209,111 @@
         <img class="PC" src="images/flex.png" alt=""></a>
     </section>
 
-   
-
-
-
 
 </main>
 
 
+<!--UX Section-->
+
+<section class="CARP" id="ux-task">
+    <h1 class="carp-title">UX TASK</h1>
+</section>
+
+<p class="ux-title"> Planning, Wireframes, UI & UX </p>
+
+<div class="slideshow-container">
+
+    
+    <div class="mySlides fade">
+      <img src="images/UX1.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="images/UX2.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="images/UX3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/UX4.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/UX5.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/UX6.png" style="width:100%">
+      </div>
+  
+ 
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+  <br> 
+  <br> 
+  <br> 
+
+  <!--REFLECTION section-->
+
+  <section class="reflection" id="ref-task">
+    <h1 class="rf-title">REFLECTION</h1>
+</section>
+
+<section class="ref-p">
+<p class="ref-para"><br><br>Graphic and Web Designing was one of the main reason I chose this course, therefore it was thought to believed 
+    <br>that Graphic and web design module would be the one I would enjoy the most. Coming from a background with 
+    <br>some light experience acted as a refresher in my memory which helped a lot with understanding tasks easier and 
+    <br>quick. Not only it made me refresh my memory in coding but it made me realise that I was no where near the level I
+    <br>wanted to be and that there's so much more knowledge to comprehend. 
+    <br>
+    <br>
+        Going through the tasks with the first one being the "CARP" task, at first I found it to be on the easy side, however 
+    <br>reading through the requirements of the posters it became difficult really fast. I felt that it made me realise that at
+    <br>a first glance it did indeed look easy however when put into real life practice, for example, a client's requirements, 
+    <br>the creativeness narrows down in order to create an output that would most importantly satisfy and attract the viewer.  
+    <br>
+    <br>
+    Additionally, for me the coding worksheet tasks were the most effective in this module as it was these worksheets that 
+    <br>prepared me and provided me all the foundations in order to create a html website from scratch. These tasks provided
+    <br>me with the very basics which they were simple tasks however they showed me the correct way to structure a website and 
+    <br>it was a plus how enjoyable they were. 
+    <br>
+    <br>
+    Furthermore, typography would be an area were I wouldn't have looked at if it weren't for this module, which showed me the 
+    <br>importance of using the right font for the right background in order to create an aesthetically pleasing sight to the eye.
+    <br>
+    <br>
+    Lastly, planning my website using wireframes was something new to me as I would normally jump straight in with no plan. This 
+    <br>had helped me incredibly with the layout and the content I implemented in the website. An important factor for me in a website 
+    <br>is if it is aesthetically pleasing to the eye, so planning the UX & UI of the website from before allowed me to gather all the 
+    <br>information and visuals that would allowed me to do that. Although, not every idea haas been implemented due to time frame or 
+    <br>lack of skill yet, it was overall a very pleasant experience for me and I am excited for what more is to come from this module!
+    <br><br>
+
+    </p>
+    
+</section>
+
+
+  
+
+
+  
+  
 
 
 
@@ -224,14 +324,17 @@
 
 
 
+  
 
 
 
 
-<!--JAVASCRIPT for mobile menu-->
+
+<!--JAVASCRIPT -->
 
     <script>
-
+    
+//Mobile
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
@@ -241,6 +344,41 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+
+        
+let slideIndex = 1;
+        
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+
+
+  
+}
 
         
 
@@ -299,6 +437,10 @@
         </div>
    </footer>
  
+
+
+
+
 
 
 
