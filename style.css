@@ -7,7 +7,7 @@
 html {
     scroll-behavior: smooth;
   }
-/* Grid templates reference https://developer.mozilla.org/en-US/docs/Web/CSS */
+/* Grid templates reference https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
 /* A past student's project had made me research further into grid templates for using as a main structure of my website - https://ollie-perry.github.io/Portfolio-Website/#top */
 
   .grid-main{
